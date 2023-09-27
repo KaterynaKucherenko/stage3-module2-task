@@ -1,18 +1,14 @@
 package com.mjc.school.main;
 
-import com.mjc.school.controller.ControllerCommands;
-import com.mjc.school.controller.impl.NewsController;
-import com.mjc.school.main.config.AppConfig;
+import com.mjc.school.controller.commands.Menu;
+import com.mjc.school.controller.implementation.NewsController;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        ControllerCommands commands = context.getBean(ControllerCommands.class);
-
-        while (true) {
-            commands.printMenu();
-            commands.execute();
-        }
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfiguration.class);
+        Menu menu = applicationContext.getBean(Menu.class);
+       menu.start();
     }
 }

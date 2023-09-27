@@ -8,10 +8,10 @@ public class AuthorDtoResponse {
     private LocalDateTime createDate;
     private LocalDateTime lastUpdateDate;
 
-    public AuthorDtoResponse(Long id, String name,LocalDateTime createDate,LocalDateTime lastUpdateDate) {
+    public AuthorDtoResponse(Long id, String name, LocalDateTime createDate, LocalDateTime lastUpdateDate) {
         this.id = id;
         this.name = name;
-        this.createDate=createDate;
+        this.createDate = createDate;
         this.lastUpdateDate = lastUpdateDate;
     }
 
@@ -46,8 +46,8 @@ public class AuthorDtoResponse {
     public void setLastUpdateDate(LocalDateTime lastUpdateDate) {
         this.lastUpdateDate = lastUpdateDate;
     }
-    @Override
+
     public String toString() {
-        return "Author id: " + id +"\n" + "Author name: " + name+ "\n" + "Author create date: " + createDate + "Author last update time: " + lastUpdateDate;
+        return "Author ID: " + id + ", author name: " + name + ", create date: " + createDate + ", last update date: " + lastUpdateDate;
     }
 }

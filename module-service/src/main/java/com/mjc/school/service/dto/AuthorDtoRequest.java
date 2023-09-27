@@ -1,20 +1,19 @@
 package com.mjc.school.service.dto;
 
-import java.time.LocalDateTime;
+import com.mjc.school.repository.implementation.NewsRepository;
 
 public class AuthorDtoRequest {
     private Long id;
     private String name;
-    private LocalDateTime createDate;
-    private LocalDateTime lastUpdateDate;
 
-    public AuthorDtoRequest(Long id, String name,LocalDateTime createDate,LocalDateTime lastUpdateDate) {
-        this.id = id;
+    public AuthorDtoRequest(String name) {
         this.name = name;
-        this.createDate = createDate;
-        this.lastUpdateDate = lastUpdateDate;
     }
 
+    public AuthorDtoRequest(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public Long getId() {
         return id;
@@ -32,19 +31,5 @@ public class AuthorDtoRequest {
         this.name = name;
     }
 
-    public LocalDateTime getLastUpdateDate() {
-        return lastUpdateDate;
-    }
 
-    public void setUpdateDate(LocalDateTime updateDate) {
-        this.lastUpdateDate = updateDate;
-    }
-
-    public LocalDateTime getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(LocalDateTime createDate) {
-        this.createDate = createDate;
-    }
 }

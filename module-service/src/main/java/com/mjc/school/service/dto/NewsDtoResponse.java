@@ -1,12 +1,11 @@
 package com.mjc.school.service.dto;
 
 import java.time.LocalDateTime;
-import java.util.Objects;
 
 public class NewsDtoResponse {
     private Long id;
-    private String content;
     private String title;
+    private String content;
     private LocalDateTime createDate;
     private LocalDateTime lastUpdateDate;
     private Long authorId;
@@ -20,7 +19,6 @@ public class NewsDtoResponse {
         this.authorId = authorId;
     }
 
-
     public Long getId() {
         return id;
     }
@@ -29,20 +27,20 @@ public class NewsDtoResponse {
         this.id = id;
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
     public String getTitle() {
         return title;
     }
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public LocalDateTime getCreateDate() {
@@ -69,14 +67,7 @@ public class NewsDtoResponse {
         this.authorId = authorId;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, title, content, createDate, lastUpdateDate, authorId);
-    }
-
-    @Override
     public String toString() {
-        return "News id: " + id + "\n" + "News title: " + title + "\n" + "News content: " + content + "\n" + "News create date: " + createDate + "News last update time: " + lastUpdateDate + "\n" + "News author: " + authorId;
+        return "News ID: " + id + ", title: " + title + ", content: " + content + ", create date: " + createDate + ", last update date: " + lastUpdateDate + ", author ID: " + authorId;
     }
-
 }

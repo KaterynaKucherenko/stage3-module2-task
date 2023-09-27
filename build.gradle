@@ -46,3 +46,7 @@ task repack(type: Jar, dependsOn: ':module-main:build') {
         }
     }
 }
+
+dependencies {
+
+}
