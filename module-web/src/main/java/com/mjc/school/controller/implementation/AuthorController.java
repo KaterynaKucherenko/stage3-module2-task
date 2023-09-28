@@ -18,7 +18,7 @@ public class AuthorController implements BaseController<AuthorDtoRequest, Author
     private final BaseService<AuthorDtoRequest, AuthorDtoResponse, Long> authorService;
 
     @Autowired
-    public AuthorController(AuthorServiceImpl authorServiceImpl) {
+    public AuthorController(BaseService<AuthorDtoRequest, AuthorDtoResponse, Long> authorServiceImpl) {
         this.authorService = authorServiceImpl;
     }
 

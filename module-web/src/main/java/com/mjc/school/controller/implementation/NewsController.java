@@ -18,7 +18,7 @@ public class NewsController implements BaseController<NewsDtoRequest, NewsDtoRes
     private final BaseService<NewsDtoRequest, NewsDtoResponse, Long> newsService;
 
     @Autowired
-    public NewsController(NewsServiceImpl newsServiceImpl) {
+    public NewsController(BaseService<NewsDtoRequest, NewsDtoResponse, Long>  newsServiceImpl) {
         this.newsService = newsServiceImpl;
     }
 

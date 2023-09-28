@@ -22,7 +22,7 @@ public class NewsServiceImpl implements BaseService<NewsDtoRequest, NewsDtoRespo
     private BaseRepository<NewsModel, Long> newsRepository;
 
     @Autowired
-    public NewsServiceImpl(NewsRepository newsRepository) {
+    public NewsServiceImpl(BaseRepository<NewsModel, Long> newsRepository) {
         this.newsRepository = newsRepository;
     }
 

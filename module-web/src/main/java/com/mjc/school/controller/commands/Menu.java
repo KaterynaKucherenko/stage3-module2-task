@@ -5,6 +5,7 @@ import com.mjc.school.controller.implementation.AuthorController;
 import com.mjc.school.controller.implementation.NewsController;
 import com.mjc.school.service.dto.NewsDtoRequest;
 import com.mjc.school.service.dto.NewsDtoResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -17,7 +18,7 @@ public class Menu {
     private Scanner scanner;
     private final Invoker invoker;
 
-
+@Autowired
     public Menu(NewsController newsController, AuthorController authorController, Invoker invoker) {
         this.newsController = newsController;
         this.authorController = authorController;
