@@ -3,11 +3,7 @@ package com.mjc.school.controller.commands.commandImpl;
 import com.mjc.school.controller.commands.CommandBase;
 
 import com.mjc.school.controller.commands.CommandType;
-import com.mjc.school.controller.implementation.NewsController;
-import com.mjc.school.service.dto.NewsDtoResponse;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.mjc.school.controller.impl.NewsController;
 
 public class GetAllNews implements CommandBase {
 

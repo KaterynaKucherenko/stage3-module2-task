@@ -1,14 +1,11 @@
 package com.mjc.school.controller.commands;
 
 import com.mjc.school.controller.commands.commandImpl.*;
-import com.mjc.school.controller.implementation.AuthorController;
-import com.mjc.school.controller.implementation.NewsController;
-import com.mjc.school.service.dto.NewsDtoRequest;
-import com.mjc.school.service.dto.NewsDtoResponse;
+import com.mjc.school.controller.impl.AuthorController;
+import com.mjc.school.controller.impl.NewsController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
 import java.util.Scanner;
 
 @Component

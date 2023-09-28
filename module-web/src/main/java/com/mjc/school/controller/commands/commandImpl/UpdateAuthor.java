@@ -2,7 +2,7 @@ package com.mjc.school.controller.commands.commandImpl;
 
 import com.mjc.school.controller.commands.CommandBase;
 import com.mjc.school.controller.commands.CommandType;
-import com.mjc.school.controller.implementation.AuthorController;
+import com.mjc.school.controller.impl.AuthorController;
 import com.mjc.school.service.dto.AuthorDtoRequest;
 
 import java.util.Scanner;

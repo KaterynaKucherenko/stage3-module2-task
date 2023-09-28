@@ -1,7 +1,6 @@
 package com.mjc.school.main;
 
 import com.mjc.school.controller.commands.Menu;
-import com.mjc.school.controller.implementation.NewsController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

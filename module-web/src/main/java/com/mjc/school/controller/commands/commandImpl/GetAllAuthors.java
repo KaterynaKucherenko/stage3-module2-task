@@ -1,14 +1,8 @@
 package com.mjc.school.controller.commands.commandImpl;
 
-import com.mjc.school.controller.annotation.CommandBody;
-import com.mjc.school.controller.annotation.CommandHandler;
 import com.mjc.school.controller.commands.CommandBase;
 import com.mjc.school.controller.commands.CommandType;
-import com.mjc.school.controller.implementation.AuthorController;
-import com.mjc.school.service.dto.AuthorDtoResponse;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.mjc.school.controller.impl.AuthorController;
 
 public class GetAllAuthors implements CommandBase {
     private AuthorController authorController;

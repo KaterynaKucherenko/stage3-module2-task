@@ -2,15 +2,9 @@ package com.mjc.school.controller.commands.commandImpl;
 
 import com.mjc.school.controller.commands.CommandBase;
 import com.mjc.school.controller.commands.CommandType;
-import com.mjc.school.controller.implementation.AuthorController;
-import com.mjc.school.controller.implementation.NewsController;
-import com.mjc.school.service.dto.AuthorDtoResponse;
-import com.mjc.school.service.dto.NewsDtoRequest;
-import com.mjc.school.service.dto.NewsDtoResponse;
-import com.mjc.school.service.implementation.AuthorServiceImpl;
+import com.mjc.school.controller.impl.AuthorController;
+import com.mjc.school.controller.impl.NewsController;
 
-import java.util.List;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class DeleteAuthor implements CommandBase {
