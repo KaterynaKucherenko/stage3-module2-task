@@ -20,7 +20,6 @@ public class Menu {
         this.authorController = authorController;
         this.invoker = invoker;
 
-        start();
     }
 
 
