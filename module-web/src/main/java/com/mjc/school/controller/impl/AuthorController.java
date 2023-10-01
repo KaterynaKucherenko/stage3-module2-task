@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
-@Controller
+@Controller("authorController")
 public class AuthorController implements BaseController<AuthorDtoRequest, AuthorDtoResponse, Long> {
     private final BaseService<AuthorDtoRequest, AuthorDtoResponse, Long> authorService;
 

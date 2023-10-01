@@ -12,14 +12,12 @@ import java.util.Scanner;
 public class Menu {
     private final NewsController newsController;
     private final AuthorController authorController;
-    private Scanner scanner;
     private final Invoker invoker;
 
 @Autowired
     public Menu(NewsController newsController, AuthorController authorController, Invoker invoker) {
         this.newsController = newsController;
         this.authorController = authorController;
-        this.scanner = new Scanner(System.in);
         this.invoker = invoker;
 
         start();

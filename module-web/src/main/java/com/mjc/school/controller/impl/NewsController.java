@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
-@Controller
+@Controller("newsController")
 public class NewsController implements BaseController<NewsDtoRequest, NewsDtoResponse, Long> {
     private final BaseService<NewsDtoRequest, NewsDtoResponse, Long> newsService;
 
